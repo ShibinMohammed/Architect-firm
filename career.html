@@ -1,0 +1,91 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Mashal Architects</title>
+  </head>
+
+  <body>
+    <!--nav-bar-->
+
+    <nav id="contact-nav">
+      <a href="index.html"
+        ><h3 class="logo">Mashal <span>Architects</span></h3></a
+      >
+      <div class="nav-links" id="navLinks">
+        <i class="fas fa-times" id="close-btn" onclick="hidemenu()"></i>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="career.html">Career</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <i class="fas fa-bars" onclick="showmenu()"></i>
+    </nav>
+
+    <!--career-->
+
+    <section class="career">
+      <h1 class="heading">Vacancies & Internship</h1>
+      <p>
+        We have open vacancies at instant. Applications for jobs & Internships
+        should include a portfolio and a resume in .pdf format (no larger than
+        10 Mb) and to be submitted to: <b>jobs@mashalarchitects.com</b>
+      </p>
+      <p>
+        <i>Kindly note: </i>We are formerly recieving outsized number of
+        applications and hence cannot pledge that we will respond each one in
+        person. We review all applications and may get in touch with you at a
+        later time when we have vacancies. We shall not consider matter
+        submitted by means of Issuu, Google Drive or other parallel websites.
+      </p>
+    </section>
+
+    <!--Footer-->
+
+    <section class="footer" id="contact-footer">
+      <h4>About Us</h4>
+      <p>2022 &copy; Mashal Architects all copyrights reserved</p>
+      <div class="icons">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+      </div>
+    </section>
+
+    <!--Javascript for Toggle Menu-->
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showmenu() {
+        navLinks.style.right = "0";
+      }
+      function hidemenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+
+    <!--Scroll Reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--Main JS-->
+    <script src="js/main.js"></script>
+    
+  </body>
+</html>

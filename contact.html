@@ -1,0 +1,135 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Mashal Architects</title>
+  </head>
+
+  <body>
+    <!--nav-->
+
+    <nav id="contact-nav">
+      <a href="index.html"
+        ><h3 class="logo">Mashal <span>Architects</span></h3></a
+      >
+      <div class="nav-links" id="navLinks">
+        <i class="fas fa-times" id="close-btn" onclick="hidemenu()"></i>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="career.html">Career</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <i class="fas fa-bars" onclick="showmenu()"></i>
+    </nav>
+
+    <!--contact-us-->
+
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <h4 id="contact-text-1">Contact Us</h4>
+          <div>
+            <a href=""><i class="fa-solid fa-location-dot"></i></a>
+            <span>
+              <a href=""><h5>XYZ Road, ABC Building</h5></a>
+              <a href=""><p>Bangalore, Karnataka, IN</p></a>
+            </span>
+          </div>
+          <div>
+            <a href=""><i class="fa-solid fa-phone"></i></a>
+            <span>
+              <a href=""><h5>+1 0123456789</h5></a>
+              <a href=""><p>Monday to Saturday, 10 AM to 6 PM</p></a>
+            </span>
+          </div>
+          <div>
+            <a href=""><i class="fa-solid fa-envelope"></i></a>
+            <span>
+              <a href=""><h5>info@gmail.com</h5></a>
+              <a href=""><p>Email us your query</p></a>
+            </span>
+          </div>
+        </div>
+        <div class="contact-col">
+          <h4>Drop Us A Line</h4>
+          <form action="form-handler.php" method="post">
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter email address"
+              required
+            />
+            <input
+              type="text"
+              name="subject"
+              placeholder="Enter your subject"
+              required
+            />
+            <textarea
+              rows="8"
+              name="message"
+              placeholder="message"
+              required
+            ></textarea>
+            <button type="submit" class="hero-btn black-btn">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+
+    <section class="footer" id="contact-footer">
+      <h4>About Us</h4>
+      <p>2022 &copy; Mashal Architects all copyrights reserved</p>
+      <div class="icons">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+      </div>
+    </section>
+
+    <!--Javascript for Toggle Menu-->
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showmenu() {
+        navLinks.style.right = "0";
+      }
+      function hidemenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+
+    <!--Scroll Reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--Main JS-->
+    <script src="js/main.js"></script>
+  </body>
+</html>
